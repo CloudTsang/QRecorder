@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1dp"
+    android:verticalGap="1dp"
+    android:keyWidth="20%p"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:keyHeight="50dp">
+
+    <Row>
+        <Key android:codes="48" android:keyLabel="0"></Key>
+        <Key android:codes="49" android:keyLabel="1"></Key>
+        <Key android:codes="50" android:keyLabel="2"></Key>
+        <Key android:codes="51" android:keyLabel="3"></Key>
+        <Key android:codes="52" android:keyLabel="4"></Key>
+        <Key android:codes="53" android:keyLabel="5"></Key>
+        <Key android:codes="54" android:keyLabel="6"></Key>
+        <Key android:codes="55" android:keyLabel="7"></Key>
+        <Key android:codes="56" android:keyLabel="8"></Key>
+        <Key android:codes="57" android:keyLabel="9"></Key>
+
+    </Row>
+    <Row>
+        <Key android:codes="43" android:keyLabel="+"></Key>
+        <Key android:codes="45" android:keyLabel="-"></Key>
+        <Key android:codes="215" android:keyLabel="×"></Key>
+        <Key android:codes="247" android:keyLabel="÷"></Key>
+        <!--<Key android:codes="61" android:keyLabel="="></Key>-->
+        <Key android:codes="46" android:keyLabel="."></Key>
+        <Key android:codes="-3" android:keyLabel="回退" android:keyEdgeFlags="right"/>
+        <!--<Key android:codes="65533" android:keyLabel="_"></Key>-->
+        <!--<Key android:codes="65534" android:keyLabel="/"></Key>-->
+        <!--<Key android:codes="65535" android:keyLabel="空格"></Key>-->
+        <!--<Key android:codes="65532" android:keyLabel="换行" android:keyEdgeFlags="right"/>-->
+
+
+    </Row>
+</Keyboard>

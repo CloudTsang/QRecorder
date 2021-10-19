@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1dp"
+    android:verticalGap="1dp"
+    android:keyWidth="20%p"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:keyHeight="25dp">
+    <Row>
+        <Key android:codes="38646" android:keyLabel="零"></Key>
+        <Key android:codes="19968" android:keyLabel="一"></Key>
+        <Key android:codes="20108" android:keyLabel="二"></Key>
+        <Key android:codes="19977" android:keyLabel="三"></Key>
+        <Key android:codes="22235" android:keyLabel="四"></Key>
+        <Key android:codes="20116" android:keyLabel="五"></Key>
+        <Key android:codes="20845" android:keyLabel="六"></Key>
+        <Key android:codes="19971" android:keyLabel="七"></Key>
+        <Key android:codes="20843" android:keyLabel="八"></Key>
+        <Key android:codes="20061" android:keyLabel="九"></Key>
+        <Key android:codes="-4" android:keyLabel="收起" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="97" android:keyLabel="a"></Key>
+        <Key android:codes="98" android:keyLabel="b"></Key>
+        <Key android:codes="99" android:keyLabel="c"></Key>
+        <Key android:codes="100" android:keyLabel="d"></Key>
+        <Key android:codes="101" android:keyLabel="e"></Key>
+        <Key android:codes="102" android:keyLabel="f"></Key>
+        <Key android:codes="-3" android:keyLabel="回退" android:keyEdgeFlags="right"/>
+
+    </Row>
+    <Row>
+        <Key android:codes="20010" android:keyLabel="个"></Key>
+        <Key android:codes="21313" android:keyLabel="十"></Key>
+        <Key android:codes="30334" android:keyLabel="百"></Key>
+        <Key android:codes="21315" android:keyLabel="千"></Key>
+        <Key android:codes="19975" android:keyLabel="万"></Key>
+        <Key android:codes="20159" android:keyLabel="亿"></Key>
+        <Key android:codes="24471" android:keyLabel="得"></Key>
+        <Key android:codes="960" android:keyLabel="π"></Key>
+        <Key android:codes="13217" android:keyLabel="㎡"></Key>
+        <Key android:codes="8736" android:keyLabel="∠"></Key>
+        <Key android:codes="8451" android:keyLabel="℃"></Key>
+        <Key android:codes="-5" android:keyLabel="清空" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="58" android:keyLabel=":"></Key>
+        <Key android:codes="40" android:keyLabel="("></Key>
+        <Key android:codes="41" android:keyLabel=")"></Key>
+        <Key android:codes="91" android:keyLabel="["></Key>
+        <Key android:codes="93" android:keyLabel="]"></Key>
+        <Key android:codes="37" android:keyLabel="%"></Key>
+        <Key android:codes="46" android:keyLabel="."></Key>
+        <Key android:codes="8730" android:keyLabel="√"></Key>
+        <Key android:codes="-1" android:keyLabel="切换" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

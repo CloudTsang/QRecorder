@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias ''
+            keyPassword ''
+            storeFile file('')
+            storePassword ''
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '27.0.1'
+    defaultConfig {
+        applicationId "com.meili.mnist"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        ndk{
+//            moduleName "tensorflow_demo"         //生成的so名字
+//            abiFilters "arm64-v8a", "armeabi-v7a", "x86_64", "x86"  //输出指定三种abi体系结构下的so库。目前可有可无。
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        noCompress 'pb'
+        noCompress 'tflite'
+        noCompress 'lite'
+    }
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(exclude: '*.bak', dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:percent:22.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'org.tensorflow:tensorflow-lite:0.1.7'
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    //    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
+    //    implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly'
+    //    compile 'org.tensorflow:tensorflow-lite:1.14.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation files('libs/com.baidu.tts_2.5.5.109.20191014_01b8485.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar')
+    implementation files('libs/aip-java-sdk-4.11.1.jar')
+    implementation files('libs/json-20160810.jar')
+    implementation files('libs/slf4j-api-1.7.25.jar')
+    implementation files('libs/slf4j-simple-1.7.25.jar')
+}

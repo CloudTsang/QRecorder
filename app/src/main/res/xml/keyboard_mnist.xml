@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="1dp"
+    android:verticalGap="1dp"
+    android:keyWidth="20%p"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:keyHeight="25dp">
+    <Row>
+        <Key android:codes="48" android:keyLabel="0"></Key>
+        <Key android:codes="49" android:keyLabel="1"></Key>
+        <Key android:codes="50" android:keyLabel="2"></Key>
+        <Key android:codes="51" android:keyLabel="3"></Key>
+        <Key android:codes="52" android:keyLabel="4"></Key>
+        <Key android:codes="53" android:keyLabel="5"></Key>
+        <Key android:codes="54" android:keyLabel="6"></Key>
+        <Key android:codes="55" android:keyLabel="7"></Key>
+        <Key android:codes="56" android:keyLabel="8"></Key>
+        <Key android:codes="57" android:keyLabel="9"></Key>
+        <Key android:codes="-4" android:keyLabel="收起" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="65" android:keyLabel="A"></Key>
+        <Key android:codes="66" android:keyLabel="B"></Key>
+        <Key android:codes="67" android:keyLabel="C"></Key>
+        <Key android:codes="68" android:keyLabel="D"></Key>
+        <Key android:codes="69" android:keyLabel="E"></Key>
+        <Key android:codes="70" android:keyLabel="F"></Key>
+        <Key android:codes="-3" android:keyLabel="回退" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="43" android:keyLabel="+"></Key>
+        <Key android:codes="45" android:keyLabel="-"></Key>
+        <Key android:codes="215" android:keyLabel="×"></Key>
+        <Key android:codes="247" android:keyLabel="÷"></Key>
+        <Key android:codes="61" android:keyLabel="="></Key>
+        <Key android:codes="8800" android:keyLabel="≠"></Key>
+        <Key android:codes="8776" android:keyLabel="≈"></Key>
+        <Key android:codes="9312" android:keyLabel="①"></Key>
+        <Key android:codes="9313" android:keyLabel="②"></Key>
+        <Key android:codes="9314" android:keyLabel="③"></Key>
+        <Key android:codes="9315" android:keyLabel="④"></Key>
+        <Key android:codes="-5" android:keyLabel="清空" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="9316" android:keyLabel="⑤"></Key>
+        <Key android:codes="9317" android:keyLabel="⑥"></Key>
+        <Key android:codes="9318" android:keyLabel="⑦"></Key>
+        <Key android:codes="9319" android:keyLabel="⑧"></Key>
+        <Key android:codes="9320" android:keyLabel="⑨"></Key>
+        <Key android:codes="9321" android:keyLabel="⑩"></Key>
+        <Key android:codes="9322" android:keyLabel="⑪"></Key>
+        <Key android:codes="9323" android:keyLabel="⑫"></Key>
+    </Row>
+    <Row>
+        <Key android:codes="62" android:keyLabel="\>"></Key>
+        <Key android:codes="60" android:keyLabel="&#060;"></Key>
+        <Key android:codes="40" android:keyLabel="("></Key>
+        <Key android:codes="41" android:keyLabel=")"></Key>
+        <Key android:codes="91" android:keyLabel="["></Key>
+        <Key android:codes="93" android:keyLabel="]"></Key>
+        <Key android:codes="-100" android:keyLabel="[fra]"></Key>
+        <Key android:codes="44" android:keyLabel="," />
+        <Key android:codes="-101" android:keyLabel="[/fra]"></Key>
+        <Key android:codes="-1" android:keyLabel="切换" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

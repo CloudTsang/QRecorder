@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/panel_inputvert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <com.meili.mnist.widget.SimpleCanvasView
+            android:id="@+id/simple_canvas_view_verteq_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#04000000" />
+
+        <TextView
+            android:id="@+id/txt_inputvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/contents_text"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_inputvert_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="inputVertConfirm"
+            android:singleLine="true"
+            android:text="确认" />
+
+        <Button
+            android:id="@+id/btn_inputvert_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="inputVertCancel"
+            android:singleLine="true"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/btn_vert_exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="inputVertExam"
+            android:text="验算" />
+
+    </LinearLayout>
+
+</LinearLayout>

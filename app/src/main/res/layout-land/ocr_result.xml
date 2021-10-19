@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/panel_result_ctrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/panel_ocr_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_bdocrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onUp"
+                android:text="↑" />
+
+            <Button
+                android:id="@+id/btn_bdocrdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onDown"
+                android:text="↓" />
+
+            <Button
+                android:id="@+id/btn_delresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onDelete"
+                android:text="删除" />
+
+            <Button
+                android:id="@+id/btn_addresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onAdd"
+                android:text="添加" />
+
+            <Button
+                android:id="@+id/btn_confirm_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onConfirmResult"
+                android:text="确认" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/panel_baidu_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.meili.mnist.widget.SimpleCanvasView
+            android:id="@+id/simple_canvas_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#04000000" />
+
+        <LinearLayout
+            android:id="@+id/ly_multans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80sp"
+            android:background="@drawable/progress_bar_states"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/txt_multans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/contents_text"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_multans_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMultAnsConfirm"
+                android:text="确认"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_baidu_ocr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="onBaiduOcr"
+            android:text="识别" />
+
+        <Switch
+            android:id="@+id/swtich_multans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/btn_skip_input_all"
+            android:text="唯一答案"
+            android:textColor="@color/bg_color"
+            android:textOff="唯一答案"
+            android:textOn="多答案"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_skip_input_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/btn_skip_input"
+            android:onClick="onSkipInput2"
+            android:text="全键盘" />
+
+        <Button
+            android:id="@+id/btn_skip_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/btn_cancel_ocr_result"
+            android:onClick="onSkipInput"
+            android:text="小键盘" />
+
+        <Button
+            android:id="@+id/btn_cancel_ocr_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/btn_baidu_ocr"
+            android:onClick="onCancel"
+            android:text="回退" />
+
+        <Switch
+            android:id="@+id/btn_fraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分数" />
+
+        <TextView
+            android:id="@+id/txt_tipfrac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="69dp"
+            android:text="多行识别，不支持分数" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
