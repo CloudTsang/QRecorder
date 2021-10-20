@@ -14,9 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BaiduTTS {
-    private static String appId = "17918441";
-    private static String appKey = "QkSAw8lG9ebQA3M7lZ044aI3";
-    private static String secretKey = "bOtKeIKN8BRDsL7EAxS96WmG05ty7PUy";
+    private static String appId = "YOUR_APP_ID";
+    private static String appKey = "YOUR_APP_KEY";
+    private static String secretKey = "YOUR_SECRET_KEY";
 
     private static SpeechSynthesizer mSpeechSynthesizer;
 
