@@ -23,9 +23,9 @@ import okhttp3.Response;
 
 public class BaiduOcr {
     private static Path supPath;
-    public static final String APP_ID = "18656651";
-    public static final String API_KEY = "wnuXkv4AAPhRFRUwYK1UIhiC";
-    public static final String SECRET_KEY = "jGKl8ZBfiDBB5V06qnoGsvbuvEgzIv1F";
+    public static final String APP_ID = "YOUR_APP_ID";
+    public static final String API_KEY = "YOUR_API_KEY";
+    public static final String SECRET_KEY = "YOUR_SECRET_KEY";
     private static String accessToken = "";
     private static AipOcr client =  new AipOcr(APP_ID, API_KEY, SECRET_KEY);
     public static ArrayList<String> ocr(byte[] bs){
